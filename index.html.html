@@ -1,0 +1,3740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HBR Rentals AI Visibility Mockups · Single-Page Bundle</title>
+<meta name="description" content="All five HBR Rentals AI visibility mockups in a single self-contained file. Prepared by Rob Iraheta, CTO for Karen Jordan.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<style>
+
+/* HBR Rentals Mockup Stylesheet
+   Matches the visual identity of hbrrentals.com (PMW platform)
+   Used by all four mockup pages
+*/
+
+:root {
+  --hbr-navy: #1F4D7A;
+  --hbr-navy-dark: #163958;
+  --hbr-navy-darker: #0f2840;
+  --hbr-gold: #C8A055;
+  --hbr-gold-dark: #a8854a;
+  --hbr-cream: #FAF7F2;
+  --hbr-bg: #FFFFFF;
+  --hbr-text: #2C2C2C;
+  --hbr-text-muted: #5C5C5C;
+  --hbr-border: #E5E5E5;
+  --hbr-border-light: #F0F0F0;
+  --hbr-section-alt: #F8F6F2;
+  --hbr-success: #2E7D32;
+  --hbr-amber: #C77700;
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--hbr-text);
+  background: var(--hbr-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--hbr-navy);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 { font-size: 2.75rem; margin-bottom: 1rem; }
+h2 { font-size: 2rem; margin-bottom: 0.875rem; }
+h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+a { color: var(--hbr-navy); text-decoration: none; }
+a:hover { color: var(--hbr-gold); }
+
+/* MOCKUP NOTICE BANNER */
+.mockup-notice {
+  background: #FFF4D6;
+  border-bottom: 3px solid var(--hbr-gold);
+  padding: 12px 24px;
+  font-size: 14px;
+  text-align: center;
+  color: #6b5215;
+}
+.mockup-notice strong { color: var(--hbr-navy); }
+
+/* TOP UTILITY BAR */
+.top-bar {
+  background: var(--hbr-navy-darker);
+  color: #fff;
+  padding: 8px 0;
+  font-size: 13px;
+}
+.top-bar-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar a { color: #fff; opacity: 0.85; }
+.top-bar a:hover { opacity: 1; color: var(--hbr-gold); }
+.top-bar-right { display: flex; gap: 18px; }
+
+/* MAIN HEADER */
+.main-header {
+  background: #fff;
+  border-bottom: 1px solid var(--hbr-border);
+  padding: 18px 0;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  color: var(--hbr-navy);
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.logo .accent { color: var(--hbr-gold); }
+.logo-tag {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: var(--hbr-text-muted);
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+nav.primary {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+nav.primary a {
+  color: var(--hbr-text);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+nav.primary a:hover { color: var(--hbr-gold); }
+nav.primary a.active {
+  color: var(--hbr-navy);
+  border-bottom: 2px solid var(--hbr-gold);
+  padding-bottom: 4px;
+}
+
+/* HERO BANNER */
+.hero {
+  background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-darker) 100%);
+  color: #fff;
+  padding: 72px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(200,160,85,0.15), transparent 50%);
+}
+.hero-inner { max-width: 900px; margin: 0 auto; position: relative; }
+.hero h1 {
+  color: #fff;
+  font-size: 3.25rem;
+  margin-bottom: 14px;
+}
+.hero .eyebrow {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--hbr-gold);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+.hero p.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.92;
+  font-weight: 300;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* CONTENT SECTIONS */
+.section {
+  padding: 64px 24px;
+}
+.section.alt { background: var(--hbr-section-alt); }
+.section-inner { max-width: 1100px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 48px; }
+.section-header .eyebrow {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--hbr-gold);
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.section-header h2 { color: var(--hbr-navy); }
+.section-header p {
+  max-width: 700px;
+  margin: 12px auto 0;
+  color: var(--hbr-text-muted);
+  font-size: 1.1rem;
+}
+
+/* FOOTER */
+footer {
+  background: var(--hbr-navy-darker);
+  color: #fff;
+  padding: 56px 24px 24px;
+  font-size: 14px;
+}
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+footer h4 {
+  color: var(--hbr-gold);
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+footer ul { list-style: none; }
+footer li { margin-bottom: 8px; }
+footer a { color: rgba(255,255,255,0.85); }
+footer a:hover { color: var(--hbr-gold); }
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: rgba(255,255,255,0.6);
+}
+.affiliations {
+  background: #fff;
+  padding: 24px;
+  border-top: 1px solid var(--hbr-border);
+}
+.affiliations-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.affil-badge {
+  background: var(--hbr-section-alt);
+  border: 1px solid var(--hbr-border);
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hbr-navy);
+  letter-spacing: 0.5px;
+}
+
+/* UTILITY */
+.btn {
+  display: inline-block;
+  background: var(--hbr-gold);
+  color: #fff;
+  padding: 14px 32px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn:hover { background: var(--hbr-gold-dark); color: #fff; }
+.btn-outline {
+  background: transparent;
+  color: var(--hbr-navy);
+  border: 2px solid var(--hbr-navy);
+}
+.btn-outline:hover { background: var(--hbr-navy); color: #fff; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  nav.primary { display: none; }
+  .hero h1 { font-size: 2rem; }
+  .footer-inner { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+}
+
+
+
+  .index-hero {
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-darker) 100%);
+    color: #fff;
+    padding: 80px 24px 100px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .index-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(200,160,85,0.18), transparent 50%);
+  }
+  .index-hero h1 { color: #fff; font-size: 3rem; margin-bottom: 16px; position: relative; }
+  .index-hero p {
+    font-size: 1.15rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.92;
+    font-weight: 300;
+    position: relative;
+  }
+  .index-grid {
+    max-width: 1100px;
+    margin: -60px auto 64px;
+    padding: 0 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  .mockup-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    border: 1px solid var(--hbr-border);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+  .mockup-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+  .mockup-card-header {
+    background: var(--hbr-section-alt);
+    padding: 24px 28px;
+    border-bottom: 3px solid var(--hbr-gold);
+  }
+  .mockup-card-num {
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .mockup-card-header h3 {
+    margin-bottom: 0;
+    color: var(--hbr-navy);
+  }
+  .mockup-card-body {
+    padding: 24px 28px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .mockup-card-body .gap-label {
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    font-weight: 700;
+  }
+  .mockup-card-body p {
+    margin-bottom: 20px;
+    color: var(--hbr-text);
+    flex: 1;
+  }
+  .mockup-card-body .url {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    margin-bottom: 16px;
+    background: var(--hbr-section-alt);
+    padding: 6px 10px;
+    border-radius: 3px;
+    display: inline-block;
+  }
+  .read-context {
+    max-width: 900px;
+    margin: 0 auto 64px;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .read-context h2 {
+    margin-bottom: 16px;
+  }
+  .read-context p {
+    color: var(--hbr-text-muted);
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+  }
+
+
+  .stats-bar {
+    background: var(--hbr-section-alt);
+    padding: 32px 24px;
+    border-bottom: 1px solid var(--hbr-border);
+  }
+  .stats-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    text-align: center;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.75rem;
+    color: var(--hbr-navy);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-text-muted);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .stat-stars {
+    color: var(--hbr-gold);
+    font-size: 1.4rem;
+    margin-top: 6px;
+  }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .review-card {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-left: 4px solid var(--hbr-gold);
+    padding: 28px;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+  }
+  .review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 14px;
+  }
+  .review-author {
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 1rem;
+  }
+  .review-meta {
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    margin-top: 2px;
+  }
+  .review-source {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-weight: 700;
+  }
+  .source-yelp { background: #FFF1F1; color: #b51010; }
+  .source-google { background: #E8F0FE; color: #1a73e8; }
+  .source-facebook { background: #E7F0FF; color: #1877f2; }
+  .review-stars {
+    color: var(--hbr-gold);
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+  }
+  .review-text {
+    color: var(--hbr-text);
+    flex: 1;
+    line-height: 1.65;
+    font-size: 15px;
+  }
+  .review-tag {
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 11px;
+    padding: 3px 9px;
+    background: var(--hbr-section-alt);
+    color: var(--hbr-text-muted);
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  .filter-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .filter-btn {
+    background: #fff;
+    border: 1.5px solid var(--hbr-border);
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--hbr-text-muted);
+    border-radius: 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .filter-btn:hover { border-color: var(--hbr-gold); color: var(--hbr-navy); }
+  .filter-btn.active {
+    background: var(--hbr-navy);
+    color: #fff;
+    border-color: var(--hbr-navy);
+  }
+  .platform-cta {
+    background: linear-gradient(135deg, #fff 0%, var(--hbr-section-alt) 100%);
+    border: 1px solid var(--hbr-border);
+    padding: 36px;
+    border-radius: 4px;
+    margin-top: 48px;
+    text-align: center;
+  }
+  .platform-cta h3 {
+    margin-bottom: 12px;
+  }
+  .platform-cta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    max-width: 700px;
+    margin: 24px auto 0;
+  }
+  .platform-cta-grid a {
+    display: block;
+    padding: 16px;
+    background: #fff;
+    border: 1.5px solid var(--hbr-border);
+    border-radius: 4px;
+    color: var(--hbr-navy);
+    font-weight: 700;
+    transition: all 0.2s;
+  }
+  .platform-cta-grid a:hover {
+    border-color: var(--hbr-gold);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+  .platform-cta-grid .platform-name { font-size: 14px; margin-bottom: 4px; }
+  .platform-cta-grid .platform-stars {
+    color: var(--hbr-gold);
+    font-size: 13px;
+  }
+  @media (max-width: 768px) {
+    .stats-inner, .reviews-grid, .platform-cta-grid { grid-template-columns: 1fr; }
+  }
+
+
+  .featured-award {
+    background: linear-gradient(135deg, var(--hbr-gold) 0%, var(--hbr-gold-dark) 100%);
+    color: #fff;
+    padding: 48px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 48px;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+    overflow: hidden;
+  }
+  .featured-award::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+  }
+  .featured-award::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    left: -60px;
+    width: 240px;
+    height: 240px;
+    background: rgba(0,0,0,0.05);
+    border-radius: 50%;
+  }
+  .featured-award .featured-eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 12px;
+    opacity: 0.95;
+    position: relative;
+  }
+  .featured-award h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .featured-award p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    line-height: 1.6;
+  }
+  .featured-award .ribbon {
+    display: inline-block;
+    background: var(--hbr-navy-darker);
+    color: #fff;
+    padding: 6px 18px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 18px;
+    border-radius: 3px;
+    position: relative;
+  }
+  .award-timeline {
+    margin-top: 16px;
+  }
+  .award-year-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .award-year-card {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-top: 4px solid var(--hbr-gold);
+    padding: 18px 14px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s;
+  }
+  .award-year-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+  }
+  .award-year {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    color: var(--hbr-navy);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .award-name {
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+  .recognition-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .recognition-card {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+  }
+  .recognition-card .icon-box {
+    width: 56px;
+    height: 56px;
+    background: var(--hbr-section-alt);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+    color: var(--hbr-gold);
+  }
+  .recognition-card h3 {
+    margin-bottom: 8px;
+  }
+  .recognition-card .since {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .recognition-card p {
+    color: var(--hbr-text);
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+  .recognition-card a {
+    color: var(--hbr-navy);
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .credentials-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .credential-item {
+    background: #fff;
+    border-left: 3px solid var(--hbr-gold);
+    padding: 18px 22px;
+    box-shadow: var(--shadow-sm);
+  }
+  .credential-name {
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .credential-detail {
+    font-size: 13px;
+    color: var(--hbr-text-muted);
+  }
+  .media-mention {
+    display: flex;
+    gap: 24px;
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    padding: 28px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+    align-items: center;
+  }
+  .media-date {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.6rem;
+    color: var(--hbr-gold);
+    min-width: 100px;
+    line-height: 1.1;
+  }
+  .media-date .month {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hbr-text-muted);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 4px;
+  }
+  .media-content { flex: 1; }
+  .media-publisher {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-text-muted);
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .media-title {
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  .media-excerpt {
+    font-size: 14px;
+    color: var(--hbr-text);
+    line-height: 1.6;
+  }
+  @media (max-width: 768px) {
+    .recognition-grid, .credentials-list { grid-template-columns: 1fr; }
+    .media-mention { flex-direction: column; align-items: flex-start; }
+  }
+
+
+  .leadership-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+  .leader-card {
+    background: linear-gradient(135deg, #fff 0%, var(--hbr-section-alt) 100%);
+    border: 1px solid var(--hbr-border);
+    border-left: 6px solid var(--hbr-gold);
+    padding: 40px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 36px;
+    align-items: start;
+    box-shadow: var(--shadow-md);
+  }
+  .leader-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hbr-gold);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 4rem;
+    font-weight: 700;
+    border: 4px solid var(--hbr-gold);
+    box-shadow: var(--shadow-md);
+  }
+  .leader-content .role-tag {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .leader-content h2 {
+    margin-bottom: 6px;
+    font-size: 2.25rem;
+  }
+  .leader-content .title {
+    color: var(--hbr-text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    font-style: italic;
+  }
+  .leader-content p { margin-bottom: 14px; line-height: 1.7; }
+  .leader-credentials {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--hbr-border);
+  }
+  .leader-credentials .cred-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-text-muted);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .leader-credentials .cred-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .cred-pill {
+    background: var(--hbr-navy);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .team-card {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-top: 4px solid var(--hbr-navy);
+    padding: 28px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .team-card .team-photo {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hbr-gold);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 18px;
+    border: 3px solid var(--hbr-gold);
+  }
+  .team-card .role-tag {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .team-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+    color: var(--hbr-navy);
+  }
+  .team-card .title {
+    color: var(--hbr-text-muted);
+    font-size: 14px;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .team-card p { font-size: 14px; line-height: 1.65; color: var(--hbr-text); }
+  .team-section-divider {
+    text-align: center;
+    margin: 48px 0 32px;
+  }
+  .team-section-divider h3 {
+    font-size: 1.5rem;
+    color: var(--hbr-navy);
+    margin-bottom: 8px;
+  }
+  .team-section-divider p {
+    color: var(--hbr-text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .shared-role-card {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-top: 4px solid var(--hbr-gold);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: var(--shadow-sm);
+    grid-column: span 2;
+  }
+  .shared-people {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid var(--hbr-border);
+  }
+  .shared-person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .shared-person .small-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--hbr-gold);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 2px solid var(--hbr-gold);
+    flex-shrink: 0;
+  }
+  .shared-person h4 { margin-bottom: 2px; color: var(--hbr-navy); }
+  .shared-person .small-title { font-size: 12px; color: var(--hbr-text-muted); }
+  @media (max-width: 768px) {
+    .leader-card { grid-template-columns: 1fr; text-align: center; }
+    .leader-photo { margin: 0 auto; }
+    .team-grid { grid-template-columns: 1fr; }
+    .shared-role-card { grid-column: span 1; }
+    .shared-people { grid-template-columns: 1fr; }
+  }
+
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 16px;
+  }
+  .pricing-card {
+    background: #fff;
+    border: 2px solid var(--hbr-border);
+    border-radius: 6px;
+    padding: 32px 28px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+  }
+  .pricing-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+  .pricing-card.featured {
+    border-color: var(--hbr-gold);
+    border-width: 3px;
+    transform: scale(1.04);
+    box-shadow: var(--shadow-md);
+  }
+  .pricing-card.featured:hover {
+    transform: scale(1.04) translateY(-6px);
+  }
+  .featured-ribbon {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--hbr-gold);
+    color: #fff;
+    padding: 6px 22px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    box-shadow: var(--shadow-sm);
+  }
+  .plan-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.75rem;
+    color: var(--hbr-navy);
+    margin-bottom: 8px;
+  }
+  .plan-tagline {
+    color: var(--hbr-text-muted);
+    font-size: 14px;
+    margin-bottom: 24px;
+    min-height: 42px;
+  }
+  .plan-price {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem;
+    color: var(--hbr-navy);
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .plan-price .of {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--hbr-text-muted);
+    font-weight: 400;
+    display: block;
+    margin-top: 6px;
+  }
+  .plan-features {
+    list-style: none;
+    margin: 28px 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--hbr-border);
+    border-bottom: 1px solid var(--hbr-border);
+    flex: 1;
+  }
+  .plan-features li {
+    padding: 8px 0;
+    padding-left: 28px;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .plan-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .plan-features li.unavailable {
+    color: var(--hbr-text-muted);
+    text-decoration: line-through;
+    opacity: 0.55;
+  }
+  .plan-features li.unavailable::before {
+    content: '×';
+    color: var(--hbr-text-muted);
+  }
+  .plan-features li strong {
+    color: var(--hbr-navy);
+    font-weight: 700;
+  }
+  .plan-cta { text-align: center; margin-top: 8px; }
+
+  /* COMPARISON TABLE - the key AI-readable structure */
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+  .comparison-table thead th {
+    background: var(--hbr-navy);
+    color: #fff;
+    padding: 18px 20px;
+    text-align: left;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+  }
+  .comparison-table thead th:first-child {
+    background: var(--hbr-navy-darker);
+    width: 36%;
+  }
+  .comparison-table thead th.featured-col {
+    background: var(--hbr-gold);
+  }
+  .comparison-table tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--hbr-border-light);
+    font-size: 14px;
+  }
+  .comparison-table tbody tr:nth-child(even) {
+    background: var(--hbr-section-alt);
+  }
+  .comparison-table tbody td:first-child {
+    font-weight: 700;
+    color: var(--hbr-navy);
+    background: var(--hbr-section-alt);
+  }
+  .comparison-table tbody tr:nth-child(even) td:first-child {
+    background: #fff;
+  }
+  .comparison-table tbody tr.section-divider td {
+    background: var(--hbr-navy-dark);
+    color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 10px 20px;
+  }
+  .check { color: var(--hbr-success); font-weight: 700; font-size: 1.2rem; }
+  .x-mark { color: var(--hbr-text-muted); opacity: 0.4; font-size: 1.2rem; }
+  .featured-cell { background: rgba(200, 160, 85, 0.08); }
+  .comparison-table tbody tr:nth-child(even) .featured-cell {
+    background: rgba(200, 160, 85, 0.14);
+  }
+  .price-cell { font-family: 'Playfair Display', Georgia, serif; font-weight: 700; color: var(--hbr-navy); }
+
+  .guarantee-callout {
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-darker) 100%);
+    color: #fff;
+    padding: 48px;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+  .guarantee-callout::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 80% 20%, rgba(200,160,85,0.2), transparent 50%);
+  }
+  .guarantee-callout h2 {
+    color: #fff;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .guarantee-callout p {
+    color: rgba(255,255,255,0.9);
+    max-width: 700px;
+    margin: 0 auto 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    position: relative;
+  }
+  .guarantee-eyebrow {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 12px;
+    position: relative;
+  }
+  .guarantee-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  .guarantee-item {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(200,160,85,0.4);
+    padding: 20px;
+    border-radius: 4px;
+    backdrop-filter: blur(8px);
+  }
+  .guarantee-item .num {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--hbr-gold);
+    font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .guarantee-item h4 { color: #fff; font-size: 14px; margin-bottom: 4px; }
+  .guarantee-item p { color: rgba(255,255,255,0.75); font-size: 12px; margin: 0; }
+
+  .fees-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-radius: 4px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  .fees-table th {
+    background: var(--hbr-section-alt);
+    padding: 12px 18px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--hbr-border);
+  }
+  .fees-table td {
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--hbr-border-light);
+  }
+
+  @media (max-width: 768px) {
+    .pricing-grid { grid-template-columns: 1fr; }
+    .pricing-card.featured { transform: none; }
+    .comparison-table thead th { font-size: 13px; padding: 12px 8px; }
+    .comparison-table tbody td { padding: 8px; font-size: 12px; }
+    .guarantee-grid { grid-template-columns: 1fr; }
+  }
+
+
+  /* ESTIMATOR-SPECIFIC STYLES */
+  .estimator-shell {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* TWO-COLUMN LAYOUT: inputs left, live results right */
+  .estimator-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: start;
+  }
+
+  /* INPUTS PANEL */
+  .inputs-panel {
+    background: #fff;
+    border: 1px solid var(--hbr-border);
+    border-radius: 6px;
+    padding: 36px;
+    box-shadow: var(--shadow-md);
+  }
+  .inputs-panel h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hbr-gold);
+    margin-bottom: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-bottom: 2px solid var(--hbr-gold);
+    padding-bottom: 10px;
+  }
+
+  .input-group {
+    margin-bottom: 28px;
+  }
+  .input-label {
+    display: block;
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 0.95rem;
+    margin-bottom: 6px;
+  }
+  .input-help {
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+
+  /* CITY SELECT */
+  .city-select-wrapper {
+    position: relative;
+  }
+  .city-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--hbr-border);
+    border-radius: 4px;
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: var(--hbr-text);
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+  .city-select:focus {
+    outline: none;
+    border-color: var(--hbr-gold);
+  }
+  .city-select-wrapper::after {
+    content: '▾';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--hbr-navy);
+    font-size: 1.2rem;
+  }
+
+  /* RENT SLIDER */
+  .rent-display {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+  .rent-amount {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    color: var(--hbr-navy);
+    font-weight: 700;
+    line-height: 1;
+  }
+  .rent-period {
+    color: var(--hbr-text-muted);
+    font-size: 14px;
+  }
+  .rent-anchor {
+    display: inline-block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .rent-slider {
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(to right, var(--hbr-gold) var(--fill, 25%), var(--hbr-border) var(--fill, 25%));
+    border-radius: 3px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+  }
+  .rent-slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: var(--hbr-navy);
+    border: 3px solid var(--hbr-gold);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+  }
+  .rent-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: var(--hbr-navy);
+    border: 3px solid var(--hbr-gold);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: var(--shadow-sm);
+  }
+  .slider-bounds {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--hbr-text-muted);
+    margin-top: 6px;
+  }
+
+  /* TIER PICKER (rent-ready, plan emphasis) */
+  .tier-picker {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .tier-option {
+    background: #fff;
+    border: 2px solid var(--hbr-border);
+    padding: 14px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s;
+    user-select: none;
+  }
+  .tier-option:hover {
+    border-color: var(--hbr-gold);
+  }
+  .tier-option.selected {
+    border-color: var(--hbr-navy);
+    background: var(--hbr-section-alt);
+  }
+  .tier-option.selected::before {
+    content: '✓';
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-right: 6px;
+  }
+  .tier-name {
+    font-weight: 700;
+    color: var(--hbr-navy);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tier-amount {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--hbr-navy);
+    font-size: 1.1rem;
+    margin-top: 4px;
+    font-weight: 700;
+  }
+  .tier-help {
+    font-size: 11px;
+    color: var(--hbr-text-muted);
+    margin-top: 4px;
+    line-height: 1.3;
+  }
+
+  /* PLAN EMPHASIS - 2 cards */
+  .emphasis-picker {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .emphasis-option {
+    background: #fff;
+    border: 2px solid var(--hbr-border);
+    padding: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+  }
+  .emphasis-option:hover { border-color: var(--hbr-gold); }
+  .emphasis-option.selected {
+    border-color: var(--hbr-navy);
+    background: var(--hbr-section-alt);
+  }
+  .emphasis-eyebrow {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .emphasis-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: var(--hbr-navy);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+  .emphasis-help {
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    line-height: 1.4;
+  }
+
+  /* RESULTS PANEL */
+  .results-panel {
+    position: sticky;
+    top: 24px;
+  }
+  .results-card {
+    background: linear-gradient(135deg, var(--hbr-navy) 0%, var(--hbr-navy-darker) 100%);
+    color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    position: relative;
+  }
+  .results-card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, rgba(200,160,85,0.18), transparent 70%);
+    pointer-events: none;
+  }
+  .results-header {
+    padding: 28px 36px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    position: relative;
+  }
+  .results-eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .results-header h2 {
+    color: #fff;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+  .results-context {
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+  }
+  .recommended-plan {
+    padding: 32px 36px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    position: relative;
+  }
+  .recommended-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .recommended-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .recommended-rate {
+    color: var(--hbr-gold);
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .cost-breakdown {
+    padding: 24px 36px;
+    position: relative;
+  }
+  .cost-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 14px;
+  }
+  .cost-row:last-child { border-bottom: none; }
+  .cost-row .label {
+    color: rgba(255,255,255,0.85);
+  }
+  .cost-row .value {
+    font-weight: 700;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+  }
+  .cost-row.total {
+    padding-top: 16px;
+    margin-top: 8px;
+    border-top: 2px solid var(--hbr-gold);
+    border-bottom: none;
+  }
+  .cost-row.total .label {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .cost-row.total .value {
+    color: var(--hbr-gold);
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.7rem;
+  }
+  .cost-row.upfront-financed {
+    background: rgba(200,160,85,0.12);
+    margin: 8px -16px;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: none;
+  }
+  .cost-row.upfront-financed .label {
+    color: var(--hbr-gold);
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .cost-row.upfront-financed .value {
+    color: var(--hbr-gold);
+  }
+  .cost-row.upfront-financed .sub {
+    display: block;
+    font-size: 11px;
+    color: rgba(255,255,255,0.65);
+    margin-top: 4px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+  }
+
+  .roi-band {
+    background: rgba(0,0,0,0.25);
+    padding: 18px 36px;
+    text-align: center;
+    font-size: 13px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.5;
+  }
+  .roi-band strong {
+    color: var(--hbr-gold);
+    font-size: 1.05rem;
+  }
+
+  .results-actions {
+    padding: 24px 36px 32px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .results-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .disclaimer {
+    margin-top: 16px;
+    padding: 16px;
+    background: var(--hbr-section-alt);
+    border-left: 3px solid var(--hbr-gold);
+    font-size: 12px;
+    color: var(--hbr-text-muted);
+    line-height: 1.5;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* THE SHORT ANSWER - 3 card summary */
+  .short-answer {
+    background: var(--hbr-navy-darker);
+    color: #fff;
+    padding: 80px 24px;
+  }
+  .short-answer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .short-answer-heading .eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .short-answer-heading h2 {
+    color: #fff;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .short-answer-cards {
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 6px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .short-answer-card {
+    padding: 32px 28px;
+    border-right: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.02);
+  }
+  .short-answer-card:last-child { border-right: none; }
+  .short-answer-card h3 {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+  }
+  .short-answer-card p {
+    color: rgba(255,255,255,0.75);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  .short-answer-card .plan-tag {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--hbr-gold);
+    font-weight: 700;
+    padding: 4px 10px;
+    border: 1px solid rgba(200,160,85,0.4);
+    border-radius: 12px;
+    margin-bottom: 14px;
+  }
+
+  /* PLUS PLAN BANNER */
+  .plus-banner {
+    background: linear-gradient(135deg, var(--hbr-gold) 0%, var(--hbr-gold-dark) 100%);
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 6px;
+    margin-bottom: 32px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    box-shadow: var(--shadow-md);
+  }
+  .plus-banner .star {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+  .plus-banner .copy h4 {
+    color: #fff;
+    margin-bottom: 4px;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+  }
+  .plus-banner .copy p {
+    color: rgba(255,255,255,0.92);
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+  }
+  .plus-banner .check-mark {
+    font-size: 1.2rem;
+    color: #fff;
+    background: rgba(0,0,0,0.18);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 900px) {
+    .estimator-grid { grid-template-columns: 1fr; }
+    .results-panel { position: relative; top: 0; }
+    .short-answer-inner { grid-template-columns: 1fr; gap: 32px; }
+    .short-answer-cards { grid-template-columns: 1fr; }
+    .short-answer-card { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.12); }
+    .short-answer-card:last-child { border-bottom: none; }
+    .tier-picker { grid-template-columns: 1fr; }
+    .emphasis-picker { grid-template-columns: 1fr; }
+    .plus-banner { grid-template-columns: 1fr; text-align: center; }
+  }
+
+
+.page { display: none; }
+.page[data-active="true"] { display: block; }
+
+/* Floating mockup nav badge */
+.hbr-mockup-nav {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: var(--hbr-navy-darker, #0f2840);
+  border: 2px solid var(--hbr-gold, #C8A055);
+  border-radius: 8px;
+  padding: 12px 16px;
+  z-index: 9999;
+  font-family: 'Lato', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  color: #fff;
+  max-width: 240px;
+}
+.hbr-mockup-nav .nav-title {
+  color: var(--hbr-gold, #C8A055);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.hbr-mockup-nav .nav-title .toggle {
+  font-size: 14px;
+  transition: transform 0.2s;
+}
+.hbr-mockup-nav.collapsed .nav-title .toggle { transform: rotate(180deg); }
+.hbr-mockup-nav.collapsed .nav-list { display: none; }
+.hbr-mockup-nav .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.hbr-mockup-nav a {
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  display: block;
+}
+.hbr-mockup-nav a:hover {
+  background: rgba(200,160,85,0.15);
+  color: var(--hbr-gold, #C8A055);
+}
+.hbr-mockup-nav a.current {
+  background: var(--hbr-gold, #C8A055);
+  color: #fff;
+  font-weight: 700;
+}
+
+</style>
+</head>
+<body>
+
+<div class="page" id="page-home" data-active="true">
+<div class="mockup-notice">
+  <strong>VISUAL MOCKUP</strong> &nbsp;|&nbsp; Prepared by Rob Iraheta, CTO &nbsp;|&nbsp; For Karen Jordan, April 28, 2026
+</div>
+
+<div class="index-hero">
+  <h1>AI Visibility: Pages We're Missing</h1>
+  <p>Five mockups showing the gap-fill pages and a new pricing estimator for hbrrentals.com. Click any card to view the mockup. Pages 1-4 close AI visibility gaps; mockup 5 introduces the new Plus plans for accidental landlords with realistic year-1 projections.</p>
+</div>
+
+<div class="index-grid">
+
+  <a href="#testimonials" class="mockup-card">
+    <div class="mockup-card-header">
+      <div class="mockup-card-num">Mockup 01</div>
+      <h3>Reviews and Testimonials</h3>
+    </div>
+    <div class="mockup-card-body">
+      <div class="gap-label">Closes Gap 1</div>
+      <div class="url">/testimonials</div>
+      <p>The page that already exists in our nav but renders empty. Aggregates reviews from Yelp, Google, and Facebook into one machine-readable place. AI crawlers can finally see the 111 five-star reviews we already have.</p>
+      <button class="btn">View Mockup</button>
+    </div>
+  </a>
+
+  <a href="#awards" class="mockup-card">
+    <div class="mockup-card-header">
+      <div class="mockup-card-num">Mockup 02</div>
+      <h3>Awards and Recognition</h3>
+    </div>
+    <div class="mockup-card-body">
+      <div class="gap-label">Closes Gap 2</div>
+      <div class="url">/awards-recognition</div>
+      <p>Our eleven Best of Tracy awards become text that AI can quote. NARPM affiliation, CALNARPM Board role, and Karen's RMP designation all in one citable place instead of footer image files.</p>
+      <button class="btn">View Mockup</button>
+    </div>
+  </a>
+
+  <a href="#meet-the-team" class="mockup-card">
+    <div class="mockup-card-header">
+      <div class="mockup-card-num">Mockup 03</div>
+      <h3>Meet the Team</h3>
+    </div>
+    <div class="mockup-card-body">
+      <div class="gap-label">Closes Gap 3</div>
+      <div class="url">/meet-the-team</div>
+      <p>The Meet the Team URL exists in nav but is empty. Populated with named bios for the full HBR Rentals team, pulled directly from the role playbooks. AI sees us as an organization, not a one-person operation.</p>
+      <button class="btn">View Mockup</button>
+    </div>
+  </a>
+
+  <a href="#pricing" class="mockup-card">
+    <div class="mockup-card-header">
+      <div class="mockup-card-num">Mockup 04</div>
+      <h3>Pricing Comparison</h3>
+    </div>
+    <div class="mockup-card-body">
+      <div class="gap-label">Closes Gap 4</div>
+      <div class="url">/pricing</div>
+      <p>Same Gold and Platinum plans we already publish, restructured into a side-by-side comparison table that AI can extract cleanly. Adds Custom plan as a third column. Includes structured price data for AI to cite.</p>
+      <button class="btn">View Mockup</button>
+    </div>
+  </a>
+
+  <a href="#pricing-estimator" class="mockup-card">
+    <div class="mockup-card-header">
+      <div class="mockup-card-num">Mockup 05</div>
+      <h3>Pricing Estimator + Plus Plans</h3>
+    </div>
+    <div class="mockup-card-body">
+      <div class="gap-label">New: Accidental Landlord Lead Capture</div>
+      <div class="url">/pricing-estimator</div>
+      <p>Interactive year-1 cost projection. Defaults pulled from RentVine portfolio averages so estimates are realistic, not aspirational. Introduces Gold Plus (10%) and Platinum Plus (12%) with rent-ready financing for accidental landlords. Closes with a 3-card "short answer" summary.</p>
+      <button class="btn">View Mockup</button>
+    </div>
+  </a>
+
+</div>
+
+<div class="read-context">
+  <h2>How to Use These Mockups</h2>
+  <p>Each mockup is a self-contained HTML file that opens in any browser. Styling matches our current site so you can see how the page would look as a live addition.</p>
+  <p>None of these are replacements for what exists. They are gap-fills, sized to be implemented in a single development cycle.</p>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#">Owner FAQs</a></li>
+        <li><a href="#">Services</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident FAQs</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#meet-the-team">Meet the Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+</div>
+<div class="page" id="page-testimonials">
+<div class="mockup-notice">
+  <strong>MOCKUP 01 OF 04</strong> &nbsp;|&nbsp; Closes Gap 1: Testimonials Page Is Empty &nbsp;|&nbsp; <a href="#home" style="color: #6b5215; text-decoration: underline;">Back to all mockups</a>
+</div>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📞 209-879-4680 &nbsp;&nbsp; ✉️ Info@hbrrentals.com</span>
+    <div class="top-bar-right">
+      <span>We Speak Spanish &nbsp;|&nbsp; Hablamos Español</span>
+    </div>
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="header-inner">
+    <div>
+      <div class="logo">HBR <span class="accent">Rentals</span></div>
+      <div class="logo-tag">Tracy Property Management</div>
+    </div>
+    <nav class="primary">
+      <a href="#">Services</a>
+      <a href="#">Owners</a>
+      <a href="#">Residents</a>
+      <a href="#">Properties</a>
+      <a href="#">Resources</a>
+      <a href="#" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Reviews and Testimonials</div>
+    <h1>What Our Owners and Residents Say</h1>
+    <p class="subtitle">For more than twenty years, families have trusted HBR Rentals with their investment properties and their homes. These are their words, gathered from Yelp, Google, and Facebook.</p>
+  </div>
+</section>
+
+<section class="stats-bar">
+  <div class="stats-inner">
+    <div>
+      <div class="stat-num">111</div>
+      <div class="stat-label">Five-Star Reviews</div>
+      <div class="stat-stars">★★★★★</div>
+    </div>
+    <div>
+      <div class="stat-num">5.0</div>
+      <div class="stat-label">Average Rating</div>
+      <div class="stat-stars">★★★★★</div>
+    </div>
+    <div>
+      <div class="stat-num">94.4%</div>
+      <div class="stat-label">Average Occupancy</div>
+    </div>
+    <div>
+      <div class="stat-num">14</div>
+      <div class="stat-label">Years in Tracy</div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Verified Reviews</div>
+      <h2>Real Words from Real Clients</h2>
+      <p>Reviews aggregated from Yelp, Google, and Facebook. Filtered to show owner and resident perspectives across our service area.</p>
+    </div>
+
+    <div class="filter-bar">
+      <button class="filter-btn active">All Reviews</button>
+      <button class="filter-btn">From Owners</button>
+      <button class="filter-btn">From Residents</button>
+      <button class="filter-btn">Tracy</button>
+      <button class="filter-btn">Mountain House</button>
+    </div>
+
+    <!-- REVIEWS - structured for AI readability -->
+    <div class="reviews-grid">
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author" itemprop="author">Marcus T.</div>
+            <div class="review-meta">Property Owner · Mountain House</div>
+          </div>
+          <span class="review-source source-yelp">YELP</span>
+        </div>
+        <div class="review-stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+          <span itemprop="ratingValue">5</span>★★★★★
+        </div>
+        <p class="review-text" itemprop="reviewBody">Karen Jordan and the whole crew at HBR Rentals have been amazing. Our family had been given three weeks to relocate from the East Coast so we weren't able to make a trip out ahead of time to search for homes. Lucky for us the second place we made an appointment to see was managed by Karen Jordan and HBR Rentals. They helped us navigate the rental market and how things work in California. We were able to find a great place to live within our budget. Even after move in, Karen has been very helpful with all the questions that we still have. I highly recommend Karen Jordan and her team.</p>
+        <span class="review-tag">Resident · Out-of-state Move</span>
+      </article>
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author">Sandra L.</div>
+            <div class="review-meta">Property Owner · Tracy</div>
+          </div>
+          <span class="review-source source-google">GOOGLE</span>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">I will not hesitate to hire HBR again if I need any help in the Tracy rental market. Karen and her team handled my property professionally from listing through tenant placement. Their tenant screening process is thorough, communication is consistent, and they were proactive about a maintenance issue I would have missed. After managing my own property for years, working with HBR has been a complete relief.</p>
+        <span class="review-tag">Owner · Long-term Client</span>
+      </article>
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author">James R.</div>
+            <div class="review-meta">Resident · Tracy</div>
+          </div>
+          <span class="review-source source-yelp">YELP</span>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">The move-in and move-out process from the beginning was streamlined and convenient. Maintenance requests were handled quickly through Property Meld, and the team always communicated clearly about timing. We were treated with respect throughout our entire tenancy. When we left, the security deposit return was prompt and itemized clearly. Highly recommend if you are looking for a rental in Tracy.</p>
+        <span class="review-tag">Resident · Move-Out Experience</span>
+      </article>
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author">Patricia D.</div>
+            <div class="review-meta">Property Owner · Mountain House</div>
+          </div>
+          <span class="review-source source-facebook">FACEBOOK</span>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Karen did everything to get us in a home as fast as possible and put up with all my stressed out calls. We were on a deadline and they made it happen. The Property Condition Report process before management started was thorough and helped us understand exactly what we were getting into. Six months in and we are very happy with how the property is being managed.</p>
+        <span class="review-tag">New Owner · Onboarding</span>
+      </article>
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author">David K.</div>
+            <div class="review-meta">Property Owner · Tracy</div>
+          </div>
+          <span class="review-source source-google">GOOGLE</span>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Switched to HBR Rentals after a bad experience with another company. The difference was night and day. Tutty handles owner communication and is responsive within hours, not days. The financial reporting through their owner portal is detailed and easy to understand. They caught a vendor overcharge I would have just paid. The Platinum plan with the 21-Day Leasing Guarantee gave me confidence and they delivered.</p>
+        <span class="review-tag">Owner · Switched From Competitor</span>
+      </article>
+
+      <article class="review-card" itemscope itemtype="https://schema.org/Review">
+        <div class="review-header">
+          <div>
+            <div class="review-author">Jennifer M.</div>
+            <div class="review-meta">Resident · Mountain House</div>
+          </div>
+          <span class="review-source source-yelp">YELP</span>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">Renting through HBR has been the smoothest rental experience we have ever had. Application was easy, screening was fair, and once we moved in everything was clearly explained. The Premier Resident Package included filter delivery and renters insurance which made setup simple. When our water heater went out, the maintenance team had a vendor scheduled within 24 hours. Professional from start to finish.</p>
+        <span class="review-tag">Resident · Maintenance Response</span>
+      </article>
+
+    </div>
+
+    <!-- AGGREGATE TO PLATFORMS -->
+    <div class="platform-cta">
+      <h3>See All Our Reviews</h3>
+      <p style="color: var(--hbr-text-muted);">A representative selection is shown above. The full set lives on the platforms below.</p>
+      <div class="platform-cta-grid">
+        <a href="https://www.yelp.com/biz/hbr-rentals-tracy-2" target="_blank" rel="noopener">
+          <div class="platform-name">Yelp Reviews</div>
+          <div class="platform-stars">★★★★★ · 44 reviews</div>
+        </a>
+        <a href="#" target="_blank">
+          <div class="platform-name">Google Reviews</div>
+          <div class="platform-stars">★★★★★ · 5.0 average</div>
+        </a>
+        <a href="https://www.facebook.com/HbrRentals/" target="_blank" rel="noopener">
+          <div class="platform-name">Facebook Recommendations</div>
+          <div class="platform-stars">★★★★★ · Top-rated</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="section-inner" style="text-align: center;">
+    <div class="section-header" style="margin-bottom: 24px;">
+      <div class="eyebrow">Are You a Current Client?</div>
+      <h2>Share Your Experience</h2>
+      <p>If we have served you well, a review on Google or Yelp helps other owners and residents find us. Your words matter to families making the same choice you made.</p>
+    </div>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="#" class="btn">Leave a Google Review</a>
+      <a href="#" class="btn btn-outline">Review Us on Yelp</a>
+    </div>
+  </div>
+</section>
+
+<div class="affiliations">
+  <div class="affiliations-inner">
+    <span class="affil-badge">NARPM Member</span>
+    <span class="affil-badge">Equal Housing</span>
+    <span class="affil-badge">Best of Tracy 2015-2025</span>
+    <span class="affil-badge">CALNARPM</span>
+    <span class="affil-badge">Credit Reporting Compliant</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#">Owner FAQs</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident FAQs</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#meet-the-team">Meet the Team</a></li>
+        <li><a href="#awards">Awards</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+</div>
+<div class="page" id="page-awards">
+<div class="mockup-notice">
+  <strong>MOCKUP 02 OF 04</strong> &nbsp;|&nbsp; Closes Gap 2: Awards Are Decorative, Not Citable &nbsp;|&nbsp; <a href="#home" style="color: #6b5215; text-decoration: underline;">Back to all mockups</a>
+</div>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📞 209-879-4680 &nbsp;&nbsp; ✉️ Info@hbrrentals.com</span>
+    <div class="top-bar-right">
+      <span>We Speak Spanish &nbsp;|&nbsp; Hablamos Español</span>
+    </div>
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="header-inner">
+    <div>
+      <div class="logo">HBR <span class="accent">Rentals</span></div>
+      <div class="logo-tag">Tracy Property Management</div>
+    </div>
+    <nav class="primary">
+      <a href="#">Services</a>
+      <a href="#">Owners</a>
+      <a href="#">Residents</a>
+      <a href="#">Properties</a>
+      <a href="#">Resources</a>
+      <a href="#" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Awards and Recognition</div>
+    <h1>A Decade of Earned Trust</h1>
+    <p class="subtitle">From the community we serve, the industry we belong to, and the press that covers our market. The recognition behind HBR Rentals is real, public, and verifiable.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- HEADLINE AWARD -->
+    <div class="featured-award">
+      <div class="featured-eyebrow">★ Top Award ★</div>
+      <h2>Best of Tracy: Eleven Years Running</h2>
+      <p>Named Best Property Management Company by Tracy Press readers every year from 2015 through 2025. Voted by the residents and owners of the community we have served for more than two decades.</p>
+      <div class="ribbon">Most Recent: 2025 First Place Winner</div>
+    </div>
+
+    <!-- AWARD TIMELINE - text-readable for AI -->
+    <h2 style="text-align: center; margin-bottom: 8px;">The Eleven-Year Run</h2>
+    <p style="text-align: center; color: var(--hbr-text-muted); margin-bottom: 32px;">Tracy Press Best of Tracy, Property Management Category</p>
+
+    <div class="award-timeline">
+      <div class="award-year-grid">
+        <div class="award-year-card">
+          <div class="award-year">2025</div>
+          <div class="award-name">Best of Tracy<br>1st Place</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2024</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2023</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2022</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2021</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2020</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2019</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2018</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2017</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2016</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+        <div class="award-year-card">
+          <div class="award-year">2015</div>
+          <div class="award-name">Best of Tracy<br>Winner</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Industry Memberships</div>
+      <h2>Standards We Hold Ourselves To</h2>
+      <p>HBR Rentals operates as an active member of the national and state property management industry, holding the credentials and accountability that come with that membership.</p>
+    </div>
+
+    <div class="recognition-grid">
+
+      <div class="recognition-card">
+        <div class="icon-box">★</div>
+        <div class="since">Member since 2012</div>
+        <h3>National Association of Residential Property Managers</h3>
+        <p>NARPM membership requires adherence to a national Code of Ethics, ongoing continuing education, and accountability to industry-wide professional standards. Karen Jordan, Director of Growth, has been an active NARPM member since 2012.</p>
+        <a href="https://www.narpm.org" target="_blank" rel="noopener">Visit NARPM →</a>
+      </div>
+
+      <div class="recognition-card">
+        <div class="icon-box">★</div>
+        <div class="since">Board Secretary, Active Since 2012</div>
+        <h3>California NARPM (CALNARPM)</h3>
+        <p>Karen Jordan currently serves as Secretary on the CALNARPM Board, contributing to statewide property management policy and education. CALNARPM membership reflects active participation in California-specific compliance, advocacy, and best practice development.</p>
+        <a href="https://www.calnarpm.org" target="_blank" rel="noopener">Visit CALNARPM →</a>
+      </div>
+
+      <div class="recognition-card">
+        <div class="icon-box">★</div>
+        <div class="since">Active Designation Pursuit</div>
+        <h3>Residential Management Professional (RMP) Designation</h3>
+        <p>Karen Jordan is currently pursuing her RMP designation, NARPM's professional credential demonstrating advanced expertise in residential property management. The RMP requires formal education, documented experience, and continuing education credits.</p>
+      </div>
+
+      <div class="recognition-card">
+        <div class="icon-box">★</div>
+        <div class="since">Compliant Reporting Partner</div>
+        <h3>Rental Credit Reporting Compliance</h3>
+        <p>HBR Rentals maintains certified compliance for resident credit reporting, allowing on-time rent payments to be reflected on resident credit profiles. This is a direct benefit to residents and demonstrates HBR's commitment to compliant resident-facing financial practices.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Leadership Credentials</div>
+      <h2>The People Behind the Recognition</h2>
+      <p>Industry recognition reflects the credentials of the leadership team running the operation.</p>
+    </div>
+
+    <div class="credentials-list">
+      <div class="credential-item">
+        <div class="credential-name">DRE License #01885470</div>
+        <div class="credential-detail">California Department of Real Estate, active in good standing</div>
+      </div>
+      <div class="credential-item">
+        <div class="credential-name">CALNARPM Board Secretary</div>
+        <div class="credential-detail">Karen Jordan, current term, statewide governance role</div>
+      </div>
+      <div class="credential-item">
+        <div class="credential-name">NARPM Member Since 2012</div>
+        <div class="credential-detail">14 years of continuous national association membership</div>
+      </div>
+      <div class="credential-item">
+        <div class="credential-name">RMP Designation Candidate</div>
+        <div class="credential-detail">Residential Management Professional, in progress</div>
+      </div>
+      <div class="credential-item">
+        <div class="credential-name">Equal Housing Compliant</div>
+        <div class="credential-detail">Strict fair-housing screening practices, documented</div>
+      </div>
+      <div class="credential-item">
+        <div class="credential-name">Crane PM Community Member</div>
+        <div class="credential-detail">Active participant in industry technology community</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Featured Coverage</div>
+      <h2>HBR Rentals in the Industry Press</h2>
+      <p>Karen Jordan and the HBR Rentals operating model have been featured in industry publications and podcasts.</p>
+    </div>
+
+    <div class="media-mention">
+      <div class="media-date">
+        <span class="month">March</span>
+        2026
+      </div>
+      <div class="media-content">
+        <div class="media-publisher">Property Management Brainstorm Podcast · Hosted by Pete Neubig</div>
+        <div class="media-title">Setting Owner Expectations Through the Property Condition Report Process</div>
+        <div class="media-excerpt">Karen Jordan, Director of Growth at HBR Rentals, discusses how a paid Property Condition Report during onboarding sets clear expectations and reduces conflict downstream. Episode covers HBR's onboarding playbook and the operational discipline behind a 14-year run of growth.</div>
+      </div>
+    </div>
+
+    <div class="media-mention">
+      <div class="media-date">
+        <span class="month">April</span>
+        2025
+      </div>
+      <div class="media-content">
+        <div class="media-publisher">Industry Interview · Remote Property Management Operations</div>
+        <div class="media-title">From Social Work to Property Management: How Karen Jordan Built a Remote Team</div>
+        <div class="media-excerpt">Featured discussion on HBR Rentals' remote-first operating model, technology stack, and how a 277-unit Tracy operation runs with a distributed team. Covers EOS implementation, AI integration, and resident-first principles.</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="affiliations">
+  <div class="affiliations-inner">
+    <span class="affil-badge">NARPM Member</span>
+    <span class="affil-badge">Equal Housing</span>
+    <span class="affil-badge">Best of Tracy 2015-2025</span>
+    <span class="affil-badge">CALNARPM</span>
+    <span class="affil-badge">DRE# 01885470</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#">Owner Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#meet-the-team">Meet the Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+</div>
+<div class="page" id="page-meet-the-team">
+<div class="mockup-notice">
+  <strong>MOCKUP 03 OF 04</strong> &nbsp;|&nbsp; Closes Gap 3: Team Is Invisible Beyond Karen &nbsp;|&nbsp; <a href="#home" style="color: #6b5215; text-decoration: underline;">Back to all mockups</a>
+</div>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📞 209-879-4680 &nbsp;&nbsp; ✉️ Info@hbrrentals.com</span>
+    <div class="top-bar-right">
+      <span>We Speak Spanish &nbsp;|&nbsp; Hablamos Español</span>
+    </div>
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="header-inner">
+    <div>
+      <div class="logo">HBR <span class="accent">Rentals</span></div>
+      <div class="logo-tag">Tracy Property Management</div>
+    </div>
+    <nav class="primary">
+      <a href="#">Services</a>
+      <a href="#">Owners</a>
+      <a href="#">Residents</a>
+      <a href="#">Properties</a>
+      <a href="#">Resources</a>
+      <a href="#" class="active">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Meet the Team</div>
+    <h1>The People Behind HBR Rentals</h1>
+    <p class="subtitle">Property management is a people business. The team below is who you actually work with day to day. Each person owns a defined responsibility, holds themselves to a documented standard, and is the right person to call for what they own.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+
+    <!-- LEADERSHIP -->
+    <div class="leader-card">
+      <div class="leader-photo">KJ</div>
+      <div class="leader-content">
+        <div class="role-tag">Leadership · Reports to Visionary</div>
+        <h2>Karen Jordan</h2>
+        <div class="title">Director of Growth · Integrator</div>
+        <p>Karen leads the day-to-day of HBR Rentals and has been part of the Tracy real estate community for two decades. She joined Home Buyers Realty in 2006 and has overseen the growth of HBR Rentals to a 277-unit portfolio across Tracy, Mountain House, Manteca, Lathrop, and the East Bay Tri-Valley.</p>
+        <p>Karen is a Tracy native, breast cancer survivor of thirteen years, and the secretary on the CALNARPM Board. She is the reason HBR Rentals operates with consistency and accountability, and the person ultimately answerable for owner outcomes.</p>
+        <div class="leader-credentials">
+          <div class="cred-label">Credentials and Affiliations</div>
+          <div class="cred-list">
+            <span class="cred-pill">CALNARPM Board Secretary</span>
+            <span class="cred-pill">NARPM Member Since 2012</span>
+            <span class="cred-pill">RMP Designation Candidate</span>
+            <span class="cred-pill">DRE Licensed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="leader-card">
+      <div class="leader-photo">RD</div>
+      <div class="leader-content">
+        <div class="role-tag">Leadership · Number Two · Reports to Karen</div>
+        <h2>Ruth De Ruiz · Tutty</h2>
+        <div class="title">Client Success Manager</div>
+        <p>Tutty owns the entire existing-owner relationship at HBR Rentals. Every renewal conversation, every lease termination discussion, every billing question, and every owner who is frustrated, confused, or considering canceling runs through Tutty. She handles each with confidence and rarely needs to escalate.</p>
+        <p>She is also the operational backbone of the team. Tutty facilitates the Tuesday all-hands meeting, reviews every vendor payment before it releases, owns every Aptly template and form, and is the first call for any team member who needs guidance. Schedule: Tuesday through Friday.</p>
+        <div class="leader-credentials">
+          <div class="cred-label">What You Call Tutty For</div>
+          <div class="cred-list">
+            <span class="cred-pill">Owner Relations</span>
+            <span class="cred-pill">Lease Renewals</span>
+            <span class="cred-pill">Billing Questions</span>
+            <span class="cred-pill">Vendor Payments</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Operations Team</div>
+      <h2>The People Running the Day-to-Day</h2>
+      <p>Each team member owns a defined responsibility and holds themselves accountable to it. When something needs to happen, you know who has it.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-photo">TJ</div>
+        <div class="role-tag">Maintenance · Reports to Karen</div>
+        <h3>Tre Jordan</h3>
+        <div class="title">Maintenance Coordinator</div>
+        <p>Tre owns the entire maintenance operation across our 300-door portfolio. Every work order is triaged within two hours, vendors held to HBR's photo and documentation standard, and owners notified before any work order exceeds $500. Tre is who keeps owners protected and residents responded to on the maintenance side.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">LH</div>
+        <div class="role-tag">Project Management · Reports to Karen</div>
+        <h3>Liz Hernandez</h3>
+        <div class="title">Project Manager</div>
+        <p>Liz owns the full lifecycle of every property transition: pre-move-out inspections, move-out documentation, rent-ready coordination, final walk-throughs, and new owner Property Condition Reports. Liz is the reason properties are truly market-ready before they are listed and the reason no resident moves into a home that isn't actually finished.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">JJ</div>
+        <div class="role-tag">Leasing · Reports to Karen</div>
+        <h3>Jack Jordan</h3>
+        <div class="title">Leasing and Showing Coordinator</div>
+        <p>Jack is the operational engine behind every vacant property from listing to signed lease. Lockboxes, prospect approvals within four business hours, post-showing security confirmations, and application screening in Boom all run through Jack. The bridge between rent-ready and a qualified resident.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">WP</div>
+        <div class="role-tag">Audit · Reports to Karen</div>
+        <h3>Walter Padilla</h3>
+        <div class="title">Process and Systems Auditor</div>
+        <p>Walter is the connective tissue between data and decisions. He audits Property Meld, Aptly, and RentVine every week to verify the team is performing against documented standards, then publishes the metrics report Karen reviews before every L10. Also owns resident renters insurance compliance, owner liability insurance compliance, and HBR's digital presence.</p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">PH</div>
+        <div class="role-tag">Field · Reports to Karen</div>
+        <h3>Phoenix</h3>
+        <div class="title">Site Visit Coordinator</div>
+        <p>Phoenix is the team's eyes and ears on the ground. While the rest of the team operates from screens, Phoenix walks through every occupied and vacant property HBR manages: annual visits, pre-move-out inspections, move-out documentation, rent-ready walk-throughs, notice posting, and Monday vacancy checks. ZInspector reports submitted within 24 hours, every time.</p>
+      </div>
+
+      <!-- SHARED ROLE: Resident Success Managers -->
+      <div class="shared-role-card">
+        <div class="role-tag" style="font-size: 10px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--hbr-gold); font-weight: 700; margin-bottom: 6px;">Resident Relations · Shared Role · Reports to Tutty and Karen</div>
+        <h3 style="font-size: 1.5rem; color: var(--hbr-navy); margin-bottom: 6px;">Resident Success Manager</h3>
+        <div style="color: var(--hbr-text-muted); font-size: 14px; margin-bottom: 14px; font-style: italic;">Ruth Nunez and Katie Monterrosa</div>
+        <p style="font-size: 14px; line-height: 1.65;">The Resident Success Manager owns the resident relationship from the day a lease is signed to the day keys are returned. New resident onboarding, move-in report communication, resident-side renewal communication, security deposit dispositions, complaint and escalation management. The reason residents feel respected, informed, and supported through their entire tenancy.</p>
+        <div class="shared-people">
+          <div class="shared-person">
+            <div class="small-photo">RN</div>
+            <div>
+              <h4>Ruth Nunez</h4>
+              <div class="small-title">Resident Success Manager</div>
+            </div>
+          </div>
+          <div class="shared-person">
+            <div class="small-photo">KM</div>
+            <div>
+              <h4>Katie Monterrosa</h4>
+              <div class="small-title">Resident Success Manager</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-card">
+        <div class="team-photo">RI</div>
+        <div class="role-tag">Technology · Reports to Karen</div>
+        <h3>Rob Iraheta</h3>
+        <div class="title">Chief Technology Officer</div>
+        <p>Rob owns every system, automation, and AI tool across HBR Rentals. RentVine, Property Meld, HavenAI, the resident portal, and the systems integrations behind them all sit with Rob. The reason the team is never blocked by a broken system and the reason Karen can make technology decisions from clarity instead of guesswork.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">How We Work Together</div>
+      <h2>Every Owner Has One Point of Contact</h2>
+      <p>You do not need to know our org chart to work with us. Tutty handles your owner relationship. Tre handles maintenance. Liz handles your turn. Jack handles your leasing. The team coordinates behind the scenes. You always know who to call.</p>
+    </div>
+
+    <div style="text-align: center; margin-top: 32px;">
+      <a href="#" class="btn">Schedule a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<div class="affiliations">
+  <div class="affiliations-inner">
+    <span class="affil-badge">NARPM Member</span>
+    <span class="affil-badge">Equal Housing</span>
+    <span class="affil-badge">Best of Tracy 2015-2025</span>
+    <span class="affil-badge">CALNARPM</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+</div>
+<div class="page" id="page-pricing">
+<div class="mockup-notice">
+  <strong>MOCKUP 04 OF 04</strong> &nbsp;|&nbsp; Closes Gap 4: Pricing Listed but Not Structured &nbsp;|&nbsp; <a href="#home" style="color: #6b5215; text-decoration: underline;">Back to all mockups</a>
+</div>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📞 209-879-4680 &nbsp;&nbsp; ✉️ Info@hbrrentals.com</span>
+    <div class="top-bar-right">
+      <span>We Speak Spanish &nbsp;|&nbsp; Hablamos Español</span>
+    </div>
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="header-inner">
+    <div>
+      <div class="logo">HBR <span class="accent">Rentals</span></div>
+      <div class="logo-tag">Tracy Property Management</div>
+    </div>
+    <nav class="primary">
+      <a href="#">Services</a>
+      <a href="#" class="active">Owners</a>
+      <a href="#">Residents</a>
+      <a href="#">Properties</a>
+      <a href="#">Resources</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Pricing</div>
+    <h1>Transparent Pricing, No Surprises</h1>
+    <p class="subtitle">Three clear plans for owners across our service area. Whether you have one rental or a portfolio, the right plan is the one with the protection level your investment needs.</p>
+  </div>
+</section>
+
+<!-- THREE PLAN CARDS -->
+<section class="section">
+  <div class="section-inner">
+
+    <div class="section-header">
+      <div class="eyebrow">Choose Your Plan</div>
+      <h2>Gold, Platinum, or Custom</h2>
+      <p>Both Gold and Platinum include the same foundation: leasing, screening, marketing, owner statements, and property maintenance coordination. The difference is the level of protection and guarantees.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <!-- GOLD -->
+      <div class="pricing-card">
+        <div class="plan-name">Gold</div>
+        <div class="plan-tagline">Foundational property management for owners who want strong service without the bundled add-ons.</div>
+        <div class="plan-price">8%
+          <span class="of">of monthly collected rent</span>
+        </div>
+        <ul class="plan-features">
+          <li>Leasing fee: <strong>50% of first month</strong></li>
+          <li>Lease renewal: <strong>$199</strong></li>
+          <li>Property Condition Report: <strong>$300 ($150 returned)</strong></li>
+          <li>Vacant property: <strong>$50 per month</strong></li>
+          <li>Owner liability insurance: <strong>$24.95/mo (waivable)</strong></li>
+          <li>Renewal inspection: <strong>$75</strong></li>
+          <li>Disbursement by the 15th of the month</li>
+          <li>Move-out coordination included</li>
+          <li>Mountain House utilities included</li>
+          <li>Termination fee: <strong>$0 / $1,000</strong></li>
+          <li class="unavailable">Eviction protection</li>
+          <li class="unavailable">Damage protection</li>
+          <li class="unavailable">Biannual inspections</li>
+          <li class="unavailable">21-Day Leasing Guarantee</li>
+        </ul>
+        <div class="plan-cta">
+          <a href="#" class="btn btn-outline">Get Started</a>
+        </div>
+      </div>
+
+      <!-- PLATINUM (FEATURED) -->
+      <div class="pricing-card featured">
+        <div class="featured-ribbon">Most Popular</div>
+        <div class="plan-name">Platinum</div>
+        <div class="plan-tagline">Full-protection property management. The plan most owners pick once they understand what is included.</div>
+        <div class="plan-price">10%
+          <span class="of">of monthly collected rent</span>
+        </div>
+        <ul class="plan-features">
+          <li>Leasing fee: <strong>50% of first month</strong></li>
+          <li>Lease renewal: <strong>$199</strong></li>
+          <li>Property Condition Report: <strong>$300 ($150 returned)</strong></li>
+          <li>Vacant property: <strong>$50 per month</strong></li>
+          <li>Owner liability insurance: <strong>$24.95/mo (waivable)</strong></li>
+          <li>Disbursement by the 15th of the month</li>
+          <li>Move-out coordination included</li>
+          <li>Mountain House utilities included</li>
+          <li><strong>Termination fee: included</strong></li>
+          <li><strong>Eviction protection: included</strong></li>
+          <li><strong>Damage protection: included</strong></li>
+          <li><strong>Biannual inspections: included</strong></li>
+          <li><strong>21-Day Leasing Guarantee</strong> (with HBR pricing and pets)</li>
+        </ul>
+        <div class="plan-cta">
+          <a href="#" class="btn">Get Started</a>
+        </div>
+      </div>
+
+      <!-- CUSTOM -->
+      <div class="pricing-card">
+        <div class="plan-name">Custom</div>
+        <div class="plan-tagline">For portfolio owners and unique property types. Gold-plan service architecture with negotiated terms.</div>
+        <div class="plan-price">Custom
+          <span class="of">flat rate or negotiated %</span>
+        </div>
+        <ul class="plan-features">
+          <li>Negotiated management fee structure</li>
+          <li>Service follows the Gold plan architecture</li>
+          <li>Designed for portfolio owners, multi-unit properties, commercial mixed-use</li>
+          <li>Onboarding includes portfolio-level reporting</li>
+          <li>Add-on services available a la carte</li>
+          <li>Disbursement by the 15th of the month</li>
+          <li>Mountain House utilities included</li>
+        </ul>
+        <div class="plan-cta">
+          <a href="#" class="btn btn-outline">Schedule a Conversation</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Side-by-Side Comparison</div>
+      <h2>Every Difference in One Place</h2>
+      <p>The complete comparison across all three plans. No interpretation needed.</p>
+    </div>
+
+    <table class="comparison-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Gold</th>
+          <th class="featured-col">Platinum</th>
+          <th>Custom</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="section-divider"><td colspan="4">Pricing</td></tr>
+        <tr>
+          <td>Monthly Management Fee</td>
+          <td class="price-cell">8%</td>
+          <td class="featured-cell price-cell">10%</td>
+          <td class="price-cell">Negotiated</td>
+        </tr>
+        <tr>
+          <td>Leasing Fee</td>
+          <td>50% of first month</td>
+          <td class="featured-cell">50% of first month</td>
+          <td>50% of first month</td>
+        </tr>
+        <tr>
+          <td>Lease Renewal Fee</td>
+          <td>$199</td>
+          <td class="featured-cell">$199</td>
+          <td>$199</td>
+        </tr>
+        <tr>
+          <td>Property Condition Report</td>
+          <td>$300 ($150 returned)</td>
+          <td class="featured-cell">$300 ($150 returned)</td>
+          <td>$300 ($150 returned)</td>
+        </tr>
+        <tr>
+          <td>Vacant Property Fee</td>
+          <td>$50 per month</td>
+          <td class="featured-cell">$50 per month</td>
+          <td>$50 per month</td>
+        </tr>
+        <tr>
+          <td>Owner Liability Insurance</td>
+          <td>$24.95/mo (waivable)</td>
+          <td class="featured-cell">$24.95/mo (waivable)</td>
+          <td>$24.95/mo (waivable)</td>
+        </tr>
+
+        <tr class="section-divider"><td colspan="4">Protections and Guarantees</td></tr>
+        <tr>
+          <td>21-Day Leasing Guarantee</td>
+          <td><span class="x-mark">✕</span></td>
+          <td class="featured-cell"><span class="check">✓</span></td>
+          <td><span class="x-mark">✕</span></td>
+        </tr>
+        <tr>
+          <td>Eviction Protection</td>
+          <td>Optional add-on</td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td>Optional add-on</td>
+        </tr>
+        <tr>
+          <td>Damage Protection</td>
+          <td>Optional add-on</td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td>Optional add-on</td>
+        </tr>
+        <tr>
+          <td>Termination Fee</td>
+          <td>$0 / $1,000</td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td>Negotiated</td>
+        </tr>
+
+        <tr class="section-divider"><td colspan="4">Inspections and Maintenance</td></tr>
+        <tr>
+          <td>Renewal Inspection</td>
+          <td>$75</td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td>Negotiated</td>
+        </tr>
+        <tr>
+          <td>Biannual Property Inspections</td>
+          <td><span class="x-mark">✕</span></td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td>Optional add-on</td>
+        </tr>
+        <tr>
+          <td>Move-Out Coordination</td>
+          <td><span class="check">✓</span></td>
+          <td class="featured-cell"><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+
+        <tr class="section-divider"><td colspan="4">Operations</td></tr>
+        <tr>
+          <td>Owner Disbursement</td>
+          <td>By the 15th</td>
+          <td class="featured-cell">By the 15th</td>
+          <td>By the 15th</td>
+        </tr>
+        <tr>
+          <td>Mountain House Utilities</td>
+          <td><span class="check">✓ Included</span></td>
+          <td class="featured-cell"><span class="check">✓ Included</span></td>
+          <td><span class="check">✓ Included</span></td>
+        </tr>
+        <tr>
+          <td>Online Owner Portal</td>
+          <td><span class="check">✓</span></td>
+          <td class="featured-cell"><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+        <tr>
+          <td>Tenant Screening (Boom)</td>
+          <td><span class="check">✓</span></td>
+          <td class="featured-cell"><span class="check">✓</span></td>
+          <td><span class="check">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- GUARANTEES -->
+<section class="section">
+  <div class="section-inner">
+    <div class="guarantee-callout">
+      <div class="guarantee-eyebrow">Our Guarantees to You</div>
+      <h2>The Promises Behind the Pricing</h2>
+      <p>Every Platinum client and many Gold clients are backed by HBR Rentals' written guarantees. If we fall short, you have recourse.</p>
+
+      <div class="guarantee-grid">
+        <div class="guarantee-item">
+          <div class="num">21</div>
+          <h4>21-Day Leasing Guarantee</h4>
+          <p>Just give us 21 days. We'll lease your Platinum property with a quality resident, or our work is on us.</p>
+        </div>
+        <div class="guarantee-item">
+          <div class="num">24h</div>
+          <h4>Communication Guarantee</h4>
+          <p>Your owner success manager returns all communication within 24 business hours, guaranteed.</p>
+        </div>
+        <div class="guarantee-item">
+          <div class="num">1</div>
+          <h4>One Point of Contact</h4>
+          <p>One direct contact for everything. No reception triage, no being passed between team members.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ADDITIONAL FEES TABLE -->
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">Full Fee Schedule</div>
+      <h2>The Specific Numbers, in Writing</h2>
+      <p>Anything you might be charged in addition to the management fee, listed here so there are no surprises.</p>
+    </div>
+
+    <table class="fees-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Cost</th>
+          <th>When It Applies</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Leasing Fee</td>
+          <td><strong>50% of first month's rent</strong></td>
+          <td>Charged when a new resident signs a lease</td>
+        </tr>
+        <tr>
+          <td>Lease Renewal Fee</td>
+          <td><strong>$199</strong></td>
+          <td>Charged when an existing resident signs a renewal</td>
+        </tr>
+        <tr>
+          <td>Property Condition Report (PCR)</td>
+          <td><strong>$300 (with $150 returned)</strong></td>
+          <td>One-time, at new owner onboarding</td>
+        </tr>
+        <tr>
+          <td>Vacant Property Fee</td>
+          <td><strong>$50 per month</strong></td>
+          <td>While property is vacant and being marketed</td>
+        </tr>
+        <tr>
+          <td>Owner Liability Insurance</td>
+          <td><strong>$24.95 per month</strong></td>
+          <td>Monthly. Waivable if HBR is added to owner's existing policy</td>
+        </tr>
+        <tr>
+          <td>Renewal Inspection (Gold only)</td>
+          <td><strong>$75</strong></td>
+          <td>At each lease renewal. Included in Platinum.</td>
+        </tr>
+        <tr>
+          <td>Termination Fee (Gold)</td>
+          <td><strong>$0 or $1,000</strong></td>
+          <td>Depending on cause and timing per the PMA</td>
+        </tr>
+        <tr>
+          <td>Move-Out Coordination</td>
+          <td><strong>Included</strong></td>
+          <td>All plans</td>
+        </tr>
+        <tr>
+          <td>Mountain House Utilities</td>
+          <td><strong>Included</strong></td>
+          <td>All plans, all Mountain House properties</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section">
+  <div class="section-inner" style="text-align: center;">
+    <div class="section-header" style="margin-bottom: 24px;">
+      <div class="eyebrow">Ready to Talk</div>
+      <h2>Get a Free Rental Analysis</h2>
+      <p>Tell us about your property. We will tell you what it could rent for, which plan fits your situation, and what to expect from working with HBR Rentals.</p>
+    </div>
+    <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+      <a href="#" class="btn">Get Free Rental Analysis</a>
+      <a href="#" class="btn btn-outline">Schedule a Conversation</a>
+    </div>
+  </div>
+</section>
+
+<div class="affiliations">
+  <div class="affiliations-inner">
+    <span class="affil-badge">NARPM Member</span>
+    <span class="affil-badge">Equal Housing</span>
+    <span class="affil-badge">Best of Tracy 2015-2025</span>
+    <span class="affil-badge">CALNARPM</span>
+    <span class="affil-badge">DRE# 01885470</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#">Owner FAQs</a></li>
+        <li><a href="#">Owner Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#meet-the-team">Meet the Team</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+</div>
+<div class="page" id="page-pricing-estimator">
+<div class="mockup-notice">
+  <strong>MOCKUP 05 OF 05</strong> &nbsp;|&nbsp; Pricing Estimator with Plus Plans for Accidental Landlords &nbsp;|&nbsp; <a href="#home" style="color: #6b5215; text-decoration: underline;">Back to all mockups</a>
+</div>
+
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <span>📞 209-879-4680 &nbsp;&nbsp; ✉️ Info@hbrrentals.com</span>
+    <div class="top-bar-right">
+      <span>We Speak Spanish &nbsp;|&nbsp; Hablamos Español</span>
+    </div>
+  </div>
+</div>
+
+<header class="main-header">
+  <div class="header-inner">
+    <div>
+      <div class="logo">HBR <span class="accent">Rentals</span></div>
+      <div class="logo-tag">Tracy Property Management</div>
+    </div>
+    <nav class="primary">
+      <a href="#">Services</a>
+      <a href="#" class="active">Owners</a>
+      <a href="#">Residents</a>
+      <a href="#">Properties</a>
+      <a href="#">Resources</a>
+      <a href="#">About</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Pricing Estimator</div>
+    <h1>What Will Your Year One Look Like?</h1>
+    <p class="subtitle">Tell us about your property. We will show you a realistic year-one projection with HBR Rentals: management fees, leasing, rent-ready, and how it pencils out across plans. Numbers, not sales talk.</p>
+  </div>
+</section>
+
+<!-- ESTIMATOR -->
+<section class="section">
+  <div class="estimator-shell">
+
+    <!-- PLUS PLAN BANNER -->
+    <div class="plus-banner">
+      <div class="star">★</div>
+      <div class="copy">
+        <h4>New: Gold Plus and Platinum Plus</h4>
+        <p>Built for accidental landlords. Pay 50% of rent-ready up front. The remaining 50% is recovered from move-in funds when your first resident lands. Get to market without the cash crunch.</p>
+      </div>
+      <div class="check-mark">Available Now</div>
+    </div>
+
+    <div class="estimator-grid">
+
+      <!-- INPUTS COLUMN -->
+      <div class="inputs-panel">
+        <h3>Tell Us About Your Property</h3>
+
+        <!-- CITY -->
+        <div class="input-group">
+          <label class="input-label" for="city">Where is your property?</label>
+          <p class="input-help">Your city sets a default rent based on what we actually collect there. Adjust below if you have a different number.</p>
+          <div class="city-select-wrapper">
+            <select id="city" class="city-select">
+              <option value="tracy" data-rent="2516" data-units="139">Tracy (avg $2,516 across 139 of our units)</option>
+              <option value="mountain-house" data-rent="2745" data-units="58">Mountain House (avg $2,745 across 58 of our units)</option>
+              <option value="manteca" data-rent="2332" data-units="32">Manteca (avg $2,332 across 32 of our units)</option>
+              <option value="lathrop" data-rent="2635" data-units="16">Lathrop (avg $2,635 across 16 of our units)</option>
+              <option value="livermore" data-rent="3300" data-units="9">Livermore (avg $3,300 across 9 of our units)</option>
+              <option value="ripon" data-rent="2900" data-units="1">Ripon (avg $2,900)</option>
+              <option value="dublin" data-rent="3300" data-units="1">Dublin (avg $3,300)</option>
+              <option value="pleasanton" data-rent="2225" data-units="2">Pleasanton (avg $2,225)</option>
+              <option value="san-ramon" data-rent="4500" data-units="1">San Ramon (avg $4,500)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- RENT SLIDER -->
+        <div class="input-group">
+          <label class="input-label" for="rent">Your monthly rent</label>
+          <div class="rent-anchor" id="rent-anchor">Anchored to Tracy portfolio average</div>
+          <div class="rent-display">
+            <span class="rent-amount" id="rent-display">$2,516</span>
+            <span class="rent-period">per month</span>
+          </div>
+          <input type="range" id="rent" class="rent-slider" min="1500" max="6000" step="25" value="2516">
+          <div class="slider-bounds">
+            <span>$1,500</span>
+            <span>$6,000</span>
+          </div>
+        </div>
+
+        <!-- RENT-READY -->
+        <div class="input-group">
+          <label class="input-label">Estimated rent-ready work needed</label>
+          <p class="input-help">Common ranges based on properties we have onboarded recently. Final cost depends on the Property Condition Report.</p>
+          <div class="tier-picker" id="ready-picker">
+            <div class="tier-option" data-cost="1500">
+              <div class="tier-name">Light</div>
+              <div class="tier-amount">$1,500</div>
+              <div class="tier-help">Clean, paint touch-ups, minor repairs</div>
+            </div>
+            <div class="tier-option selected" data-cost="3500">
+              <div class="tier-name">Moderate</div>
+              <div class="tier-amount">$3,500</div>
+              <div class="tier-help">Carpet, paint, minor flooring or appliances</div>
+            </div>
+            <div class="tier-option" data-cost="6000">
+              <div class="tier-name">Heavy</div>
+              <div class="tier-amount">$6,000</div>
+              <div class="tier-help">Full turnover, multiple systems, deeper repairs</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLAN EMPHASIS -->
+        <div class="input-group">
+          <label class="input-label">What matters most to you?</label>
+          <p class="input-help">This guides which plan we recommend. You can change it at any time.</p>
+          <div class="emphasis-picker" id="emphasis-picker">
+            <div class="emphasis-option selected" data-emphasis="protection">
+              <div class="emphasis-eyebrow">Standard Plans</div>
+              <div class="emphasis-name">Full Protection</div>
+              <div class="emphasis-help">I have cash on hand for rent-ready and want maximum included protections.</div>
+            </div>
+            <div class="emphasis-option" data-emphasis="cashflow">
+              <div class="emphasis-eyebrow">Plus Plans</div>
+              <div class="emphasis-name">Cash-Flow Flexibility</div>
+              <div class="emphasis-help">I want to get to market fast without paying for full rent-ready up front.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="disclaimer">
+          <strong>How this works.</strong> Year-one projection assumes a 12-month lease, no early break, and no major vendor escalations. Final pricing is documented in your Property Management Agreement after the Property Condition Report.
+        </div>
+      </div>
+
+      <!-- RESULTS COLUMN -->
+      <div class="results-panel">
+        <div class="results-card">
+          <div class="results-header">
+            <div class="results-eyebrow">Your Year One Projection</div>
+            <h2 id="results-property-context">Tracy property at $2,516 per month</h2>
+            <div class="results-context" id="results-emphasis-context">Recommended plan based on full-protection preference</div>
+          </div>
+
+          <div class="recommended-plan">
+            <div class="recommended-label">Recommended for You</div>
+            <div class="recommended-name" id="recommended-name">Platinum</div>
+            <div class="recommended-rate" id="recommended-rate">10% of monthly collected rent</div>
+          </div>
+
+          <div class="cost-breakdown" id="cost-breakdown">
+            <!-- populated by JS -->
+          </div>
+
+          <div class="roi-band">
+            <strong id="annual-rent">$30,192</strong> in collected rent &nbsp;·&nbsp; HBR keeps <strong id="hbr-take-pct">10%</strong> &nbsp;·&nbsp; You keep <strong id="owner-take-pct">90%</strong>
+          </div>
+
+          <div class="results-actions">
+            <a href="#" class="btn">Schedule a Free Rental Analysis</a>
+            <a href="#pricing" class="btn btn-outline" style="background: transparent; color: #fff; border-color: rgba(255,255,255,0.4);">See Full Plan Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- THE SHORT ANSWER - 3 card summary -->
+<section class="short-answer">
+  <div class="short-answer-inner">
+    <div class="short-answer-heading">
+      <div class="eyebrow">01 — Summary</div>
+      <h2>The short answer</h2>
+    </div>
+
+    <div class="short-answer-cards">
+
+      <div class="short-answer-card">
+        <span class="plan-tag">Pick Standard</span>
+        <h3>Pick Gold or Platinum if</h3>
+        <p>You have cash flow to cover rent-ready up front and want either standard service (Gold) or maximum included protection with the 21-Day Leasing Guarantee, eviction coverage, and biannual inspections (Platinum).</p>
+      </div>
+
+      <div class="short-answer-card">
+        <span class="plan-tag">Pick Plus</span>
+        <h3>Pick Gold Plus or Platinum Plus if</h3>
+        <p>You are an accidental landlord or do not have cash on hand for full rent-ready. Pay 50% up front, the remaining 50% is recovered from move-in funds. Get to market in days instead of weeks.</p>
+      </div>
+
+      <div class="short-answer-card">
+        <span class="plan-tag">Pick Custom</span>
+        <h3>Pick Custom if</h3>
+        <p>You are a portfolio owner with multiple properties or a non-standard property type. We will design a fee structure that fits your portfolio with the same operational discipline behind every HBR plan.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY ANCHORED RENTS -->
+<section class="section alt">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="eyebrow">About These Numbers</div>
+      <h2>Why Our Estimator Uses Real Rents</h2>
+      <p>Every default rent in this tool comes from our actual portfolio. Tracy is what 139 of our Tracy units actually collect. Mountain House is what 58 of our Mountain House units actually collect. We do not anchor to aspirational pricing or above-market comps because owners deserve a realistic projection, not a sales pitch.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto;">
+      <div style="text-align: center;">
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; color: var(--hbr-navy); font-weight: 700; line-height: 1;">277</div>
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--hbr-text-muted); margin-top: 8px; font-weight: 600;">Active Units in Estimator</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; color: var(--hbr-navy); font-weight: 700; line-height: 1;">9</div>
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--hbr-text-muted); margin-top: 8px; font-weight: 600;">Cities Covered</div>
+      </div>
+      <div style="text-align: center;">
+        <div style="font-family: 'Playfair Display', Georgia, serif; font-size: 2.5rem; color: var(--hbr-navy); font-weight: 700; line-height: 1;">RentVine</div>
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--hbr-text-muted); margin-top: 8px; font-weight: 600;">Live Source of Truth</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="affiliations">
+  <div class="affiliations-inner">
+    <span class="affil-badge">NARPM Member</span>
+    <span class="affil-badge">Equal Housing</span>
+    <span class="affil-badge">Best of Tracy 2015-2025</span>
+    <span class="affil-badge">CALNARPM</span>
+    <span class="affil-badge">DRE# 01885470</span>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="logo" style="color: #fff; font-size: 1.4rem; margin-bottom: 4px;">HBR <span class="accent">Rentals</span></div>
+      <div style="font-size: 12px; opacity: 0.7;">DRE# 01885470</div>
+      <p style="margin-top: 16px; font-size: 13px; opacity: 0.85;">672 W 11th St STE 380<br>Tracy, CA 95376<br>209-879-4680</p>
+    </div>
+    <div>
+      <h4>Owners</h4>
+      <ul>
+        <li><a href="#">Owner Resources</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#">Free Rental Analysis</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Residents</h4>
+      <ul>
+        <li><a href="#">Resident Resources</a></li>
+        <li><a href="#">Resident Portal</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>About</h4>
+      <ul>
+        <li><a href="#">About HBR</a></li>
+        <li><a href="#meet-the-team">Meet the Team</a></li>
+        <li><a href="#awards">Awards</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Copyright 2026 HBR Rentals. All Rights Reserved.</span>
+    <span>Mockup prepared by Rob Iraheta, CTO</span>
+  </div>
+</footer>
+
+<!-- ESTIMATOR LOGIC -->
+</div>
+
+
+<div class="hbr-mockup-nav" id="hbr-mockup-nav">
+  <div class="nav-title" onclick="document.getElementById('hbr-mockup-nav').classList.toggle('collapsed')">
+    <span>Mockup Navigator</span><span class="toggle">▾</span>
+  </div>
+  <div class="nav-list">
+    <a href="#home">Index / Overview</a>
+    <a href="#testimonials">01 · Testimonials</a>
+    <a href="#awards">02 · Awards</a>
+    <a href="#meet-the-team">03 · Meet the Team</a>
+    <a href="#pricing">04 · Pricing</a>
+    <a href="#pricing-estimator">05 · Pricing Estimator</a>
+  </div>
+</div>
+<script>
+(function() {
+  // Highlight current page in nav on hashchange
+  function syncNav() {
+    var hash = window.location.hash.replace('#','') || 'home';
+    document.querySelectorAll('.hbr-mockup-nav a').forEach(function(a) {
+      a.classList.toggle('current', a.getAttribute('href') === '#' + hash);
+    });
+  }
+  window.addEventListener('hashchange', syncNav);
+  document.addEventListener('DOMContentLoaded', syncNav);
+})();
+</script>
+
+
+
+<script>
+(function() {
+  function showPage(anchor) {
+    if (!anchor) anchor = 'home';
+    var pages = document.querySelectorAll('.page');
+    var found = false;
+    pages.forEach(function(p) {
+      if (p.id === 'page-' + anchor) {
+        p.style.display = 'block';
+        p.setAttribute('data-active', 'true');
+        found = true;
+      } else {
+        p.style.display = 'none';
+        p.removeAttribute('data-active');
+      }
+    });
+    if (!found) {
+      // Fallback to home
+      var home = document.getElementById('page-home');
+      if (home) {
+        home.style.display = 'block';
+        home.setAttribute('data-active', 'true');
+        anchor = 'home';
+      }
+    }
+    window.scrollTo(0, 0);
+    // Notify any page-specific scripts
+    document.dispatchEvent(new CustomEvent('hbr:page-activated', { detail: { anchor: anchor } }));
+  }
+  
+  function handleHashChange() {
+    var hash = window.location.hash.replace('#', '');
+    showPage(hash);
+  }
+  
+  window.addEventListener('hashchange', handleHashChange);
+  document.addEventListener('DOMContentLoaded', handleHashChange);
+  
+  // Catch all clicks on internal anchors so estimator etc. can navigate cleanly
+  document.addEventListener('click', function(e) {
+    var link = e.target.closest('a');
+    if (!link) return;
+    var href = link.getAttribute('href');
+    if (href && href.indexOf('#') === 0) {
+      // Already a hash link - let the hashchange handler do its thing
+      // but make sure the page scrolls to top
+      setTimeout(function() { window.scrollTo(0, 0); }, 10);
+    }
+  });
+})();
+</script>
+
+<script>
+(function() {
+  function init_pricing_estimator() {
+    
+  const fmt = (n) => '$' + Math.round(n).toLocaleString('en-US');
+  const fmtFull = (n) => '$' + Math.round(n).toLocaleString('en-US');
+
+  // Plan rate matrix
+  const PLANS = {
+    'gold':         { name: 'Gold',          rate: 0.08, label: '8% of monthly collected rent',  isPlus: false },
+    'platinum':     { name: 'Platinum',      rate: 0.10, label: '10% of monthly collected rent', isPlus: false },
+    'gold-plus':    { name: 'Gold Plus',     rate: 0.10, label: '10% of monthly collected rent', isPlus: true  },
+    'platinum-plus':{ name: 'Platinum Plus', rate: 0.12, label: '12% of monthly collected rent', isPlus: true  }
+  };
+
+  const FIXED = {
+    leasingFeePctOfFirstMonth: 0.50,
+    pcr: 300,        // PCR cost
+    pcrReturn: 150,  // returned at signing
+    insuranceMonthly: 24.95,
+    cityNames: {
+      'tracy': 'Tracy',
+      'mountain-house': 'Mountain House',
+      'manteca': 'Manteca',
+      'lathrop': 'Lathrop',
+      'livermore': 'Livermore',
+      'ripon': 'Ripon',
+      'dublin': 'Dublin',
+      'pleasanton': 'Pleasanton',
+      'san-ramon': 'San Ramon'
+    }
+  };
+
+  // STATE
+  const state = {
+    city: 'tracy',
+    rent: 2516,
+    rentReady: 3500,
+    emphasis: 'protection' // 'protection' or 'cashflow'
+  };
+
+  // ELEMENTS
+  const citySelect = document.getElementById('city');
+  const rentSlider = document.getElementById('rent');
+  const rentDisplay = document.getElementById('rent-display');
+  const rentAnchor = document.getElementById('rent-anchor');
+  const readyPicker = document.getElementById('ready-picker');
+  const emphasisPicker = document.getElementById('emphasis-picker');
+  const recommendedNameEl = document.getElementById('recommended-name');
+  const recommendedRateEl = document.getElementById('recommended-rate');
+  const propertyContextEl = document.getElementById('results-property-context');
+  const emphasisContextEl = document.getElementById('results-emphasis-context');
+  const breakdownEl = document.getElementById('cost-breakdown');
+  const annualRentEl = document.getElementById('annual-rent');
+  const hbrTakePctEl = document.getElementById('hbr-take-pct');
+  const ownerTakePctEl = document.getElementById('owner-take-pct');
+
+  function updateSliderFill() {
+    const min = parseInt(rentSlider.min);
+    const max = parseInt(rentSlider.max);
+    const val = parseInt(rentSlider.value);
+    const pct = ((val - min) / (max - min)) * 100;
+    rentSlider.style.setProperty('--fill', pct + '%');
+  }
+
+  function pickPlan() {
+    if (state.emphasis === 'cashflow') {
+      // Plus plan recommended
+      return state.rent >= 3000 ? 'platinum-plus' : 'gold-plus';
+    } else {
+      // Standard - recommend platinum at higher rents, gold below
+      return state.rent >= 2800 ? 'platinum' : 'gold';
+    }
+  }
+
+  function calculate(planKey) {
+    const plan = PLANS[planKey];
+    const annualRent = state.rent * 12;
+    const mgmtFee = annualRent * plan.rate;
+    const leasingFee = state.rent * FIXED.leasingFeePctOfFirstMonth;
+    const pcrNet = FIXED.pcr - FIXED.pcrReturn; // $150 net
+    const insuranceAnnual = FIXED.insuranceMonthly * 12; // shown as waivable
+
+    let rentReadyUpfront = state.rentReady;
+    let rentReadyFinanced = 0;
+
+    if (plan.isPlus) {
+      rentReadyUpfront = state.rentReady * 0.5;
+      rentReadyFinanced = state.rentReady * 0.5;
+    }
+
+    const totalYearOne = mgmtFee + leasingFee + pcrNet + rentReadyUpfront;
+    // Note: financed portion appears in cost ledger but recovered from move-in funds
+
+    return {
+      plan,
+      annualRent,
+      mgmtFee,
+      leasingFee,
+      pcrNet,
+      insuranceAnnual,
+      rentReadyTotal: state.rentReady,
+      rentReadyUpfront,
+      rentReadyFinanced,
+      totalYearOne
+    };
+  }
+
+  function render() {
+    const planKey = pickPlan();
+    const result = calculate(planKey);
+
+    // Header
+    const cityName = FIXED.cityNames[state.city];
+    propertyContextEl.textContent = `${cityName} property at ${fmt(state.rent)} per month`;
+    emphasisContextEl.textContent = state.emphasis === 'cashflow'
+      ? 'Plus plan recommended for cash-flow flexibility'
+      : 'Standard plan recommended for full protection';
+
+    // Recommended plan
+    recommendedNameEl.textContent = result.plan.name;
+    recommendedRateEl.textContent = result.plan.label;
+
+    // Build breakdown
+    let html = '';
+
+    html += `<div class="cost-row"><span class="label">Annual rent collected</span><span class="value">${fmt(result.annualRent)}</span></div>`;
+    html += `<div class="cost-row"><span class="label">Management fee (${(result.plan.rate*100).toFixed(0)}%)</span><span class="value">${fmt(result.mgmtFee)}</span></div>`;
+    html += `<div class="cost-row"><span class="label">Leasing fee (50% of first month)</span><span class="value">${fmt(result.leasingFee)}</span></div>`;
+    html += `<div class="cost-row"><span class="label">Property Condition Report (net)</span><span class="value">${fmt(result.pcrNet)}</span></div>`;
+
+    if (result.plan.isPlus) {
+      // Plus plans: split rent-ready
+      html += `<div class="cost-row"><span class="label">Rent-ready (50% paid up front)</span><span class="value">${fmt(result.rentReadyUpfront)}</span></div>`;
+      html += `<div class="cost-row upfront-financed"><span class="label">★ Rent-ready financed (50%)<span class="sub">Recovered from move-in funds when first resident lands. You do not pay this out of pocket.</span></span><span class="value">${fmt(result.rentReadyFinanced)}</span></div>`;
+    } else {
+      html += `<div class="cost-row"><span class="label">Rent-ready (paid up front)</span><span class="value">${fmt(result.rentReadyTotal)}</span></div>`;
+    }
+
+    html += `<div class="cost-row total"><span class="label">Your year-one cost</span><span class="value">${fmt(result.totalYearOne)}</span></div>`;
+
+    breakdownEl.innerHTML = html;
+
+    // ROI band
+    annualRentEl.textContent = fmt(result.annualRent);
+    hbrTakePctEl.textContent = `${(result.plan.rate*100).toFixed(0)}%`;
+    ownerTakePctEl.textContent = `${(100 - result.plan.rate*100).toFixed(0)}%`;
+  }
+
+  // EVENT WIRING
+  citySelect.addEventListener('change', (e) => {
+    state.city = e.target.value;
+    const opt = e.target.options[e.target.selectedIndex];
+    const newRent = parseInt(opt.dataset.rent);
+    state.rent = newRent;
+    rentSlider.value = newRent;
+    rentDisplay.textContent = fmt(newRent);
+    rentAnchor.textContent = `Anchored to ${FIXED.cityNames[state.city]} portfolio average`;
+    updateSliderFill();
+    render();
+  });
+
+  rentSlider.addEventListener('input', (e) => {
+    state.rent = parseInt(e.target.value);
+    rentDisplay.textContent = fmt(state.rent);
+    rentAnchor.textContent = `Custom rent (${FIXED.cityNames[state.city]} avg is ${fmt(parseInt(citySelect.options[citySelect.selectedIndex].dataset.rent))})`;
+    updateSliderFill();
+    render();
+  });
+
+  readyPicker.addEventListener('click', (e) => {
+    const opt = e.target.closest('.tier-option');
+    if (!opt) return;
+    readyPicker.querySelectorAll('.tier-option').forEach(o => o.classList.remove('selected'));
+    opt.classList.add('selected');
+    state.rentReady = parseInt(opt.dataset.cost);
+    render();
+  });
+
+  emphasisPicker.addEventListener('click', (e) => {
+    const opt = e.target.closest('.emphasis-option');
+    if (!opt) return;
+    emphasisPicker.querySelectorAll('.emphasis-option').forEach(o => o.classList.remove('selected'));
+    opt.classList.add('selected');
+    state.emphasis = opt.dataset.emphasis;
+    render();
+  });
+
+  // INITIAL RENDER
+  updateSliderFill();
+  render();
+
+  }
+  // Run when page becomes active
+  document.addEventListener('hbr:page-activated', function(e) {
+    if (e.detail.anchor === 'pricing-estimator' && !window.__init_pricing_estimator_done) {
+      window.__init_pricing_estimator_done = true;
+      try { init_pricing_estimator(); } catch(err) { console.error('Init error', err); }
+    }
+  });
+  // Also run if this is the initial page on load
+  if (window.location.hash.replace('#','') === 'pricing-estimator' && !window.__init_pricing_estimator_done) {
+    document.addEventListener('DOMContentLoaded', function() {
+      window.__init_pricing_estimator_done = true;
+      try { init_pricing_estimator(); } catch(err) { console.error('Init error', err); }
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
